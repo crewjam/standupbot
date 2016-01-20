@@ -3,7 +3,9 @@
 
 This is a super simple slackbot to run standups. Run it on a cron, like:
 
-30 10 * * 1-5 /bin/bash -c '/home/ross/go/bin/standupbot -slack-token=xoxb-0000000000-yyyyyyyyyyyyyyyyyy -channel=myproject 2>&1 | logger'
+```
+30 10 * * 1-5 /bin/bash -c 'path/to/standupbot -slack-token=xoxb-0000000000-yyyyyyyyyyyyyyyyyy -channel=myproject 2>&1 | logger'
+```
 
 How a standup works:
 
