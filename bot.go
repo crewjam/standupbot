@@ -14,7 +14,7 @@ import (
 
 // TODO: handle typing notifications
 
-var SlackToken = flag.String("slack-token", "xoxb-3265619057-yl95F30LHjlM1Kxn5QKNGrWu", "Slack Token")
+var SlackToken = flag.String("slack-token", "", "Slack Token")
 var SlackURL = flag.String("slack-url", "", "Slack URL (may be empty)")
 var Channel = flag.String("channel", "general", "The name of the slack channel")
 var Users = flag.String("users", "", "Only consider the specified users, separated by commas, rather than all users in the channel")
@@ -208,3 +208,4 @@ func main() {
 	Say("Thanks everybody! See you next time.")
 	log.Printf("done with standup")
 }
+
